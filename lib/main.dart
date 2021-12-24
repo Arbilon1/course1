@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_shop/ExploreCart.dart';
 
 
 void main() {
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
               icon: Icon(Icons.shopping_cart_rounded)),)
           ],
           backgroundColor: Colors.black,
-          leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
+          
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -94,6 +95,26 @@ class MyApp extends StatelessWidget {
                   )
                 ),
               ),
+              SizedBox(height: 20,),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 15 ),
+                child: Column(
+                 crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Explore", style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+                    SizedBox(
+                      height: 25,
+                    ),
+                    ExploreCart(image: "assets/images/smartphone.png", title: "Smartphones", isActive: true),
+                    ExploreCart(image: "assets/images/clothes.png", title: "Clothes", isActive: true),
+                     ExploreCart(image: "assets/images/autoparts.jpg", title: "Auto Parts", isActive: true),
+                      ExploreCart(image: "assets/images/jewerly.jpg", title: "Jewerly", isActive: true),
+                     
+                  ],
+                ),),
+                 
+                
+                
               Container(
                   padding: EdgeInsets.all(5),
                   height: 450,
@@ -113,7 +134,60 @@ class MyApp extends StatelessWidget {
             ],
             
           ),
-        )
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              UserAccountsDrawerHeader(
+                
+                accountName: Text("Arbilon Amzai"),
+               accountEmail: Text("arbilonamzai@gmail.com"),
+               currentAccountPicture: CircleAvatar(
+                 backgroundColor: Colors.black,
+                 child: Text("AA"),
+               ),
+              ),
+               ListTile(
+                 leading: Icon(Icons.home_rounded),
+                 title: Text("Home"),
+                 onTap: () {},
+                ),
+                ListTile(
+                 leading: Icon(Icons.adjust),
+                 title: Text("Watching"),
+                 subtitle: Text("1 item"),
+                 onTap: () {},
+                ),
+                 ListTile(
+                 leading: Icon(Icons.saved_search),
+                 title: Text("Saved"),
+                 subtitle: Text("5 items saved"),
+                 onTap: () {},
+                ),
+                 ListTile(
+                 leading: Icon(Icons.backpack_rounded),
+                 title: Text("Purchases"),
+                 onTap: () {},
+                ),
+                 ListTile(
+                 leading: Icon(Icons.payments),
+                 title: Text("Payments"),
+                 onTap: () {},
+                ),
+                 ListTile(
+                 leading: Icon(Icons.settings),
+                 title: Text("Settings"),
+                 onTap: () {},
+                ),
+                 ListTile(
+                 leading: Icon(Icons.help_center),
+                 title: Text("Help"),
+                 onTap: () {},
+                )
+            ],
+          ),
+        ),
+        
 
       ),
     

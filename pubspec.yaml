@@ -55,9 +55,10 @@ flutter:
     - assets/
     
     - assets/images/onshop.jpg
-
- 
-    
+    - assets/images/smartphone.png
+    - assets/images/clothes.png
+    - assets/images/autoparts.jpg
+    - assets/images/jewerly.jpg
 
  
   uses-material-design: true
