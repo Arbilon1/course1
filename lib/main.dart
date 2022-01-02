@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:online_shop/AboutUsScreen.dart';
 import 'package:online_shop/ExploreCart.dart';
+import 'package:online_shop/HomeScreen.dart';
+
 
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+      home:MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -148,9 +152,15 @@ class MyApp extends StatelessWidget {
                ),
               ),
                ListTile(
-                 leading: Icon(Icons.home_rounded),
+                 leading:(Icon(Icons.home)),
                  title: Text("Home"),
-                 onTap: () {},
+                 onTap: () {  Navigator.push(
+            context,
+             MaterialPageRoute(builder: (context) =>  HomeScreen()));
+           
+             
+             
+             },
                 ),
                 ListTile(
                  leading: Icon(Icons.adjust),
@@ -180,9 +190,13 @@ class MyApp extends StatelessWidget {
                  onTap: () {},
                 ),
                  ListTile(
-                 leading: Icon(Icons.help_center),
-                 title: Text("Help"),
-                 onTap: () {},
+                 leading: Icon(Icons.account_balance_outlined),
+                 title: Text("About Us"),
+                 onTap: (){ Navigator.push(
+            context,
+             MaterialPageRoute(builder: (context) =>  AboutUsScreen()));
+        },
+                 
                 )
             ],
           ),

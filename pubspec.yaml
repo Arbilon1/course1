@@ -59,8 +59,18 @@ flutter:
     - assets/images/clothes.png
     - assets/images/autoparts.jpg
     - assets/images/jewerly.jpg
+    - assets/images/quality.jpg
+    - assets/images/suport.png
+    - assets/images/speed.png
+    - assets/images/teamwork.jpg
+    - assets/images/partnership.png
+    - assets/images/privacy.jpg
+    - assets/images/terms.jpg
 
- 
+
+
+
+
   uses-material-design: true
 
   

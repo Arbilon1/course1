@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 class ExploreCart extends StatelessWidget {
@@ -11,6 +13,7 @@ class ExploreCart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 140,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),
       color: Colors.white30,
       boxShadow: [
@@ -29,7 +32,7 @@ class ExploreCart extends StatelessWidget {
       ),
       child: Column(
         children: [
-        Image.asset(image, height: 80),
+        Image.asset(image, height: 100),
           Text(title, style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
           )
         ],
