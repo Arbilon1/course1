@@ -19,7 +19,7 @@ Widget build(BuildContext context){
         ),
         body: Container(
           child: GridView(children: [
-            Container(child: ExploreCart(image: "assets/images/quality.jpg", title: "Quality Products", isActive: true)),
+            Container(child: ExploreCart(image: "assets/images/qualityc.png", title: "Quality Products", isActive: true)),
              Container(child: ExploreCart(image: "assets/images/suport.png", title: "Data Suport", isActive: true)),
               Container(child: ExploreCart(image: "assets/images/speed.png", title: "Speed Matters", isActive: true)),
                Container(child: ExploreCart(image: "assets/images/teamwork.jpg", title: "Team Work", isActive: true)),

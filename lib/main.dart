@@ -5,6 +5,7 @@ import 'package:online_shop/HomeScreen.dart';
 
 
 
+
 void main() {
   runApp(MaterialApp(
       home:MyApp()));
@@ -78,13 +79,13 @@ class MyApp extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: 'Free shipping', 
-                        style: TextStyle(backgroundColor: Colors.red,
+                        style: TextStyle(backgroundColor: Colors.red, color: Colors.black,
                         fontSize: 20)),
                       TextSpan(
                         text: ' on millions of items.',
                          style: TextStyle(color: Colors.black, fontSize: 18)),
                       TextSpan(
-                        text: 'Enjoy', style: TextStyle(backgroundColor: Colors.red,
+                        text: 'Enjoy', style: TextStyle(backgroundColor: Colors.red, color: Colors.black,
                          fontSize: 20)),
                       TextSpan(
                         text: ' low prices and great discount.', 
@@ -99,7 +100,7 @@ class MyApp extends StatelessWidget {
                   )
                 ),
               ),
-              SizedBox(height: 20,),
+             SizedBox(height: 20,),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 15 ),
                 child: Column(
@@ -110,7 +111,7 @@ class MyApp extends StatelessWidget {
                       height: 25,
                     ),
                     ExploreCart(image: "assets/images/smartphone.png", title: "Smartphones", isActive: true),
-                    ExploreCart(image: "assets/images/clothes.png", title: "Clothes", isActive: true),
+                    ExploreCart(image: "assets/images/Clothes.jpg", title: "Clothes", isActive: true),
                      ExploreCart(image: "assets/images/autoparts.jpg", title: "Auto Parts", isActive: true),
                       ExploreCart(image: "assets/images/jewerly.jpg", title: "Jewerly", isActive: true),
                      
@@ -157,16 +158,13 @@ class MyApp extends StatelessWidget {
                  onTap: () {  Navigator.push(
             context,
              MaterialPageRoute(builder: (context) =>  HomeScreen()));
-           
-             
-             
-             },
+              },
                 ),
                 ListTile(
                  leading: Icon(Icons.adjust),
                  title: Text("Watching"),
                  subtitle: Text("1 item"),
-                 onTap: () {},
+                 onTap: () { }
                 ),
                  ListTile(
                  leading: Icon(Icons.saved_search),
